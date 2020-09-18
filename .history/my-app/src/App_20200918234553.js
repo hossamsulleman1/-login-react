@@ -1,12 +1,10 @@
 import React from 'react';
-import './App.css';
-import NavBar from "./components/HeaderContent.jsx"
+import logo from './logo.svg';import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <NavBar></NavBar>
         
       </header>
     </div>

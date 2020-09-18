@@ -15,11 +15,11 @@ function NavBar() {
         alignItems='center'>
         <Text p={2} fontWeight='bold'>Rebass</Text>
         <Box mx='auto' />
-       
-        <Link variant='nav' href='#'>
+        <Text>
+        <Link variant='nav' href='/'>
           Profile
         </Link>
-        
+        </Text>
        
       </Flex>
     );

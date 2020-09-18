@@ -16,7 +16,7 @@ function NavBar() {
         <Text p={2} fontWeight='bold'>Rebass</Text>
         <Box mx='auto' />
        
-        <Link variant='nav' href='#'>
+        <Link variant='nav' href='/'>
           Profile
         </Link>
         
