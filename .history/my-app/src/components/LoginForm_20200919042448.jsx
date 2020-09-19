@@ -61,7 +61,7 @@ function LoginForm() {
 <Button
         variant="contained"
         color="primary"
-        className="loginButton"
+        className=""
         startIcon={< MeetingRoomIcon />}
       >Login</Button>
 
