@@ -49,9 +49,7 @@ function LoginForm() {
     id='remember'
     name='remember'
   />
- <Text fontSize={[2]}
-  fontWeight='bold'
-  color='black'>Remember me</Text> 
+ <Text Remember me
 </Label>
 </Box>
 <br></br>

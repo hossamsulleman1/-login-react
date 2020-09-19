@@ -5,10 +5,10 @@ import Typography from '@material-ui/core/Typography';
 import LoginIcon from './LoginSvg'
 import '../App.css';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
-import Button from '@material-ui/core/Button';
 
 import {
     Text,
+   Button,
 Box,
 Flex,
   } from 'rebass'
@@ -58,8 +58,7 @@ function LoginCard() {
 
   <Button
         variant="contained"
-        color="primary"
-        className="newUser"
+        color="secondary"
         startIcon={<PersonAddIcon />}
       >New User</Button>
 

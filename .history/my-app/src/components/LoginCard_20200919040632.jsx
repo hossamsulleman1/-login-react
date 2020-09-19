@@ -3,12 +3,13 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import LoginIcon from './LoginSvg'
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
 import '../App.css';
-import PersonAddIcon from '@material-ui/icons/PersonAdd';
-import Button from '@material-ui/core/Button';
 
 import {
     Text,
+   Button,
 Box,
 Flex,
   } from 'rebass'
@@ -27,7 +28,7 @@ function LoginCard() {
   <CardContent>
 
   <Flex mx={-2}>
-  <Box width={1/2} px={2}>
+  <Box width={2/3} px={2}>
   
   <Text
   fontSize={[ 3, 4, 5 ]}
@@ -54,16 +55,7 @@ function LoginCard() {
 <br></br>
 <LoginForm></LoginForm>
   </Box>
-  <Box width={1/2} px={2}>
-
-  <Button
-        variant="contained"
-        color="primary"
-        className="newUser"
-        startIcon={<PersonAddIcon />}
-      >New User</Button>
-
-
+  <Box width={1/3} px={2}>
   <LoginIcon></LoginIcon>
   </Box>
 </Flex>

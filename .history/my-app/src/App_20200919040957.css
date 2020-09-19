@@ -5,14 +5,11 @@ padding-top: 3%;
 }
 
 
-.newUser {
-  float: right;
-}
 
 .loginDiv {
   display: flex;
   justify-content: center;
-  padding-right: 45%;
+  padding-right: 43;
 }
 
 .or {

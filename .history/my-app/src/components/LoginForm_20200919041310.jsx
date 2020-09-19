@@ -1,9 +1,12 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
+import { Switch } from '@rebass/forms'
 import '../App.css';
+import Fab from '@material-ui/core/Fab';
 import MeetingRoomIcon from '@material-ui/icons/MeetingRoom';
-import Button from '@material-ui/core/Button';
+import AddIcon from '@material-ui/icons/Add';
+
 
 import {
     Box,
@@ -49,22 +52,22 @@ function LoginForm() {
     id='remember'
     name='remember'
   />
- <Text fontSize={[2]}
-  fontWeight='bold'
-  color='black'>Remember me</Text> 
+  Remember me
 </Label>
 </Box>
 <br></br>
 <div className="loginDiv">
+{/* <Fab className="loginButton" size="large" variant="extended" color="primary">
+<MeetingRoomIcon></MeetingRoomIcon>
+<Text>Login</Text>
+  
+</Fab>
+<Fab className="signUp" size="large" variant="extended" color="primary">
+  <AddIcon />
+  <Text>Sign UP</Text>
+</Fab> */}
 
-
-<Button
-        variant="contained"
-        color="primary"
-        className={classes.button}
-        startIcon={< MeetingRoomIcon />}
-      >Login</Button>
-
+<Button color="primary">Primary</Button>
 </div>
 
 <br></br>

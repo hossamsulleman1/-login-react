@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
+import { Switch } from '@rebass/forms'
 import '../App.css';
 import MeetingRoomIcon from '@material-ui/icons/MeetingRoom';
 import Button from '@material-ui/core/Button';
@@ -49,9 +50,7 @@ function LoginForm() {
     id='remember'
     name='remember'
   />
- <Text fontSize={[2]}
-  fontWeight='bold'
-  color='black'>Remember me</Text> 
+  Remember me
 </Label>
 </Box>
 <br></br>

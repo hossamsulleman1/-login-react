@@ -58,7 +58,7 @@ function LoginCard() {
 
   <Button
         variant="contained"
-        color="primary"
+        color="secondary"
         className="newUser"
         startIcon={<PersonAddIcon />}
       >New User</Button>

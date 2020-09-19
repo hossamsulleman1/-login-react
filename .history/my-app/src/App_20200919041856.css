@@ -5,9 +5,7 @@ padding-top: 3%;
 }
 
 
-.newUser {
-  float: right;
-}
+.newUser
 
 .loginDiv {
   display: flex;
