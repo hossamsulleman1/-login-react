@@ -9,7 +9,7 @@ import Button from '@material-ui/core/Button';
 import {
     Box,
     Text,
-    Flex,
+    
     Link,
   } from 'rebass'
   import { Label, Checkbox } from '@rebass/forms'

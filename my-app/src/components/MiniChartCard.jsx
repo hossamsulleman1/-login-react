@@ -3,11 +3,11 @@ import Card from '@material-ui/core/Card';
 import Button from '@material-ui/core/Button'
 import CardContent from '@material-ui/core/CardContent';
 import '../App.css';
+import TrendingDownIcon from '@material-ui/icons/TrendingDown';
 import {
     Text,
     Heading,
-Box,
-Flex,
+
   } from 'rebass'
 
 
@@ -28,22 +28,14 @@ return (
     </CardContent>
 
     <CardContent ClassName="LeftMiniCard">
-        <Text >
-        1111
-        </Text>
+       <Heading>
+         12hrs
+       </Heading>
      
-        <Button
-        variant="contained"
-        // change color w var to show rise or fall ect 
-        color="default"
-        // className={1}
-        // make the icon a variable that is dif names for the shit yfm dif icons for up and down and that 
-        // startIcon={}
-      >
-        <Heading>
-            80
-        </Heading>
+        <Button  endIcon={TrendingDownIcon} variant="outlined" color="secondary">
+        2.8%
       </Button>
+    
       <Text>
           from 76% last week 
       </Text>
@@ -51,6 +43,7 @@ return (
 
     <CardContent ClassName="RightMiniCard">
 {/* Graphpreview */}
+<Text>randomtext graph slot</Text>
     </CardContent>
 
   </Card>

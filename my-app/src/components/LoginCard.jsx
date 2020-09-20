@@ -16,7 +16,6 @@ import {
 Box,
 Flex,
   } from 'rebass'
-  import { Label, Checkbox } from '@rebass/forms'
   import { GoogleLogin } from 'react-google-login';
 import LoginForm from './LoginForm'
 
