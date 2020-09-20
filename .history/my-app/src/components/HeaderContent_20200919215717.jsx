@@ -36,12 +36,8 @@ Home
           Profile
         </Link>
 
-<Link style={navStyle} to="/SignUp">
-SignUp
-</Link>
 
-
-<Link to="/LoginPage">
+<Link>
 <Avatar alt="HS" src="/static/images/avatar/1.jpg" />
         {/* make this the data from the auth object */}
 </Link>

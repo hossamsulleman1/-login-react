@@ -5,7 +5,6 @@ import '../App.css';
 import MeetingRoomIcon from '@material-ui/icons/MeetingRoom';
 import Button from '@material-ui/core/Button';
 
-
 import {
     Box,
     Text,
@@ -65,7 +64,7 @@ function LoginForm() {
         color="primary"
         className="loginButton"
         startIcon={< MeetingRoomIcon />}
-      >Sign Up</Button>
+      >Sig nUp</Button>
 
 </div>
 

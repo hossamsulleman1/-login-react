@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function LoginForm() {
+function SignUp() {
   const classes = useStyles();
 
   return (

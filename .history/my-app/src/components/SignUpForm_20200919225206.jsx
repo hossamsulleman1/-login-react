@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function LoginForm() {
+function SignUpForm() {
   const classes = useStyles();
 
   return (
@@ -83,4 +83,4 @@ function LoginForm() {
   );
 }
 
-export default LoginForm;
+export default SigmUpForm;

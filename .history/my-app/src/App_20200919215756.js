@@ -6,7 +6,6 @@ import preset from '@rebass/preset'
 import LoginPage from './components/LoginPage';
 import HomePage from './components/HomePage';
 import NavBar from "./components/HeaderContent";
-import SignUp from './components/NewUserPage';
 
 function App() {
   return (
@@ -17,7 +16,7 @@ function App() {
 
 <Route path="/LoginPage" component={LoginPage}/>
 <Route path="/HomePage" component={HomePage}/>
-<Route path="/SignUp" component={SignUp}/>
+
 
   </Switch> 
 </Router>

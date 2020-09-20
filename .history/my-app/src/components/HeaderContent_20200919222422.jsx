@@ -37,7 +37,8 @@ Home
         </Link>
 
 <Link style={navStyle} to="/SignUp">
-SignUp
+
+  
 </Link>
 
 

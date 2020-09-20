@@ -36,10 +36,6 @@ Home
           Profile
         </Link>
 
-<Link style={navStyle} to="/SignUp">
-SignUp
-</Link>
-
 
 <Link to="/LoginPage">
 <Avatar alt="HS" src="/static/images/avatar/1.jpg" />

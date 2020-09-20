@@ -36,9 +36,7 @@ Home
           Profile
         </Link>
 
-<Link style={navStyle} to="/SignUp">
-SignUp
-</Link>
+<Link style={navStyle} to="/SignUp"
 
 
 <Link to="/LoginPage">

@@ -2,9 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import '../App.css';
-import MeetingRoomIcon from '@material-ui/icons/MeetingRoom';
 import Button from '@material-ui/core/Button';
-
+import GroupAddIcon from '@material-ui/icons/GroupAdd';
 
 import {
     Box,
@@ -23,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function LoginForm() {
+function SignUpForm() {
   const classes = useStyles();
 
   return (
@@ -64,7 +63,7 @@ function LoginForm() {
         variant="contained"
         color="primary"
         className="loginButton"
-        startIcon={< MeetingRoomIcon />}
+        startIcon={<GroupAddIcon/>}
       >Sign Up</Button>
 
 </div>
@@ -83,4 +82,4 @@ function LoginForm() {
   );
 }
 
-export default LoginForm;
+export default SigmUpForm;
