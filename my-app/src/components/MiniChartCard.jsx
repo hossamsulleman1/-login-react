@@ -4,53 +4,93 @@ import Button from '@material-ui/core/Button'
 import CardContent from '@material-ui/core/CardContent';
 import '../App.css';
 import TrendingDownIcon from '@material-ui/icons/TrendingDown';
+import GraphSvg from './GraphSvg'
 import {
     Text,
     Heading,
 
   } from 'rebass'
 
+import { makeStyles, useTheme } from '@material-ui/core/styles';
+import CardMedia from '@material-ui/core/CardMedia';
+
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+  },
+  details: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  content: {
+    flex: '1 0 auto',
+  },
+  cover: {
+    width: 151,
+  },
+  controls: {
+    display: 'flex',
+    alignItems: 'center',
+    paddingLeft: theme.spacing(1),
+    paddingBottom: theme.spacing(1),
+  },
+  playIcon: {
+    height: 38,
+    width: 38,
+  },
+}));
+
+
+
 
 function MiniChartCard() {
+
+
+  const classes = useStyles();
+  const theme = useTheme();
+
 return (
 
 
-
-<Card ClassName="MiniChartCard" variant="outlined">
-    
-    
-    <CardContent>
+<Card className={classes.root}>
+      <div className={classes.details}>
+      <CardContent>
     <Heading
-  fontSize={[ 1,]}
+  fontSize={[ 4,]}
   color='Grey'>
-  Name
+  Reading
 </Heading>
-    </CardContent>
 
-    <CardContent ClassName="LeftMiniCard">
-       <Heading>
+<Heading fontSize={[4,]}>
          12hrs
        </Heading>
-     
-        <Button  endIcon={TrendingDownIcon} variant="outlined" color="secondary">
-        2.8%
-      </Button>
-    
-      <Text>
-          from 76% last week 
-      </Text>
+
     </CardContent>
+        <div className={classes.controls}>
+        <Button
+        variant="outlined"
+        color="secondary"
+        startIcon={<TrendingDownIcon/>}
+      >
+      
+        12%
+        
+         </Button>
+            
+    <Heading  color="grey" fontSize={[1,]}>
+    from 76% last week 
+    </Heading>
+        </div>
+      </div>
+      <CardContent>
+        <Heading>
+          PLACE GRAPH
+        </Heading>
+        </CardContent>
+    </Card>
 
-    <CardContent ClassName="RightMiniCard">
-{/* Graphpreview */}
-<Text>randomtext graph slot</Text>
-    </CardContent>
-
-  </Card>
-
- 
-)
-
+);
 }
 
 export default MiniChartCard;
