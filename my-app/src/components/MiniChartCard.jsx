@@ -4,15 +4,12 @@ import Button from '@material-ui/core/Button'
 import CardContent from '@material-ui/core/CardContent';
 import '../App.css';
 import TrendingDownIcon from '@material-ui/icons/TrendingDown';
-import GraphSvg from './GraphSvg'
 import {
-    Text,
     Heading,
 
   } from 'rebass'
 
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import CardMedia from '@material-ui/core/CardMedia';
 
 
 const useStyles = makeStyles((theme) => ({

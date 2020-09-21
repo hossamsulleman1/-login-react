@@ -9,7 +9,7 @@ import GroupAddIcon from '@material-ui/icons/GroupAdd';
 import {
     Box,
     Text,
-    Flex,
+    
     Link,
   } from 'rebass'
   import { Label, Checkbox } from '@rebass/forms'

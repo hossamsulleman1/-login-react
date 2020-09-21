@@ -1,8 +1,6 @@
 import React from "react";
 import "../App.css";
-import NavBar from "./HeaderContent";
 import { Grid } from "@material-ui/core";
-import LoginCard from "./LoginCard.jsx";
 import SignUpCard from './SignUpCard.jsx'
 
 function SignUp() {
@@ -10,7 +8,6 @@ function SignUp() {
     <Grid container direction="column">
       <Grid item>
         {/* this is where the header will be  */}
-        {/* <NavBar></NavBar> */}
       </Grid>
       {/* grids can be items grids containers or both at the same time  */}
       <Grid item container>

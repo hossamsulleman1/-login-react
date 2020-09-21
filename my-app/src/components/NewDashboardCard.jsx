@@ -6,19 +6,12 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 
 import {
-    Text,
-Box,
-Flex,
 Heading,
   } from 'rebass'
 
 import {
     Label,
-    Input,
-    Select,
-    Textarea,
     Radio,
-    Checkbox,
   } from '@rebass/forms'
 
 const useStyles = makeStyles((theme) => ({

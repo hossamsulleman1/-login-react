@@ -3,7 +3,6 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import '../App.css';
-import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import Button from '@material-ui/core/Button';
 import SignUpForm from './SignUpForm';
 import MeetingRoomIcon from '@material-ui/icons/MeetingRoom';
@@ -15,9 +14,7 @@ import {
 Box,
 Flex,
   } from 'rebass'
-  import { Label, Checkbox } from '@rebass/forms'
   import { GoogleLogin } from 'react-google-login';
-import LoginForm from './LoginForm'
 import SignUpIcon from './SignUpSvg';
 
   const responseGoogle = (response) => {
