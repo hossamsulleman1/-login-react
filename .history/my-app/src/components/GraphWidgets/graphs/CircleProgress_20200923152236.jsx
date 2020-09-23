@@ -5,12 +5,15 @@ import { Form, Grid, MountNode, Segment } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
 import App from "../../../App";
 
+const mountNode = document.getElementById("root");
+
+
 class CircleProgress extends React.Component {
   constructor() {
     super();
     this.state = {
       percent: 25,
-      data: this.getData(3),
+      data: this.getData(0),
     };
   }
 
@@ -79,5 +82,6 @@ class CircleProgress extends React.Component {
   }
 }
 
+ReactDOM.render(<App />, MountNode);
 
 export default CircleProgress;

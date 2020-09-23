@@ -10,7 +10,7 @@ class CircleProgress extends React.Component {
     super();
     this.state = {
       percent: 25,
-      data: this.getData(3),
+      data: this.getData(0),
     };
   }
 

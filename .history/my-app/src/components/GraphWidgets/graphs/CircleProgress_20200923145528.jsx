@@ -1,27 +1,22 @@
-import React, { Component } from "react";
+import React from "react";
 import { VictoryAnimation, VictoryLabel, VictoryPie } from "victory";
-import ReactDOM from "react-dom";
-import { Form, Grid, MountNode, Segment } from 'semantic-ui-react'
-import 'semantic-ui-css/semantic.min.css'
-import App from "../../../App";
+import ReactDOM from 'react-dom'
 
 class CircleProgress extends React.Component {
   constructor() {
     super();
     this.state = {
-      percent: 25,
-      data: this.getData(3),
+      percent: 25, data: this.getData(0)
     };
   }
 
   componentDidMount() {
     let percent = 25;
     this.setStateInterval = window.setInterval(() => {
-      percent += Math.random() * 25;
-      percent = percent > 100 ? 0 : percent;
+      percent += (Math.random() * 25);
+      percent = (percent > 100) ? 0 : percent;
       this.setState({
-        percent,
-        data: this.getData(percent),
+        percent, data: this.getData(percent)
       });
     }, 2000);
   }
@@ -31,10 +26,7 @@ class CircleProgress extends React.Component {
   }
 
   getData(percent) {
-    return [
-      { x: 1, y: percent },
-      { x: 2, y: 100 - percent },
-    ];
+    return [{ x: 1, y: percent }, { x: 2, y: 100 - percent }];
   }
 
   render() {
@@ -44,29 +36,25 @@ class CircleProgress extends React.Component {
           <VictoryPie
             standalone={false}
             animate={{ duration: 1000 }}
-            width={400}
-            height={400}
+            width={400} height={400}
             data={this.state.data}
             innerRadius={120}
             cornerRadius={25}
             labels={() => null}
             style={{
-              data: {
-                fill: ({ datum }) => {
-                  const color = datum.y > 30 ? "green" : "red";
-                  return datum.x === 1 ? color : "transparent";
-                },
-              },
+              data: { fill: ({ datum }) => {
+                const color = datum.y > 30 ? "green" : "red";
+                return datum.x === 1 ? color : "transparent";
+              }
+              }
             }}
           />
           <VictoryAnimation duration={1000} data={this.state}>
             {(newProps) => {
               return (
                 <VictoryLabel
-                  textAnchor="middle"
-                  verticalAnchor="middle"
-                  x={200}
-                  y={200}
+                  textAnchor="middle" verticalAnchor="middle"
+                  x={200} y={200}
                   text={`${Math.round(newProps.percent)}%`}
                   style={{ fontSize: 45 }}
                 />
@@ -79,5 +67,6 @@ class CircleProgress extends React.Component {
   }
 }
 
+ReactDOM.render(<CircleProgress/>, mountNode);
 
 export default CircleProgress;

@@ -4,7 +4,7 @@ import "../App.css";
 import Grid from "@material-ui/core/Grid";
 import { Heading } from "rebass";
 import CircleProgress from './GraphWidgets/graphs/CircleProgress'
-import DashboardNav from './DashboardNav'
+import Dashboard
 
 function DashboardPage() {
   return (
@@ -28,19 +28,16 @@ function DashboardPage() {
 
         {/* <NewDashboardCard></NewDashboardCard> */}
 
-
-        <Grid>
-          {/* grid for Icons Eg sport ect have user add icons and names to them for pages they want ect */}
-        <DashboardNav></DashboardNav>
-        </Grid>
-
 <Grid>
     {/* Daily Tracker Div */}
 <Heading>Daily Tracker</Heading>
 <CircleProgress></CircleProgress>
 </Grid>
 
-      
+        <Grid>
+          {/* grid for Icons Eg sport ect have user add icons and names to them for pages they want ect */}
+        
+        </Grid>
 
         <Grid justify="space-evenly">{/* main grid for graphs ect  */}</Grid>
       </Grid>

@@ -28,19 +28,16 @@ function DashboardPage() {
 
         {/* <NewDashboardCard></NewDashboardCard> */}
 
-
-        <Grid>
-          {/* grid for Icons Eg sport ect have user add icons and names to them for pages they want ect */}
-        <DashboardNav></DashboardNav>
-        </Grid>
-
 <Grid>
     {/* Daily Tracker Div */}
 <Heading>Daily Tracker</Heading>
 <CircleProgress></CircleProgress>
 </Grid>
 
-      
+        <Grid>
+          {/* grid for Icons Eg sport ect have user add icons and names to them for pages they want ect */}
+        <DashboardNav></DashboardNav>
+        </Grid>
 
         <Grid justify="space-evenly">{/* main grid for graphs ect  */}</Grid>
       </Grid>

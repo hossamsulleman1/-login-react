@@ -14,6 +14,7 @@ import SignUp from './components/NewUserPage';
 import DashboardPage from './components/DashboardPage';
 import ProfilePage from './components/ProfilePage';
 import 'semantic-ui-css/semantic.min.css'
+import React from 'react';
 import ReactDOM from 'react-dom';
 import * as V from 'victory';
 
