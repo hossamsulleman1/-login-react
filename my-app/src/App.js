@@ -13,7 +13,6 @@ import NavBar from "./components/HeaderContent";
 import SignUp from './components/NewUserPage';
 import DashboardPage from './components/DashboardPage';
 import ProfilePage from './components/ProfilePage';
-import 'semantic-ui-css/semantic.min.css'
 
 function App() {
   return (
