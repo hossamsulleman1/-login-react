@@ -59,21 +59,7 @@ function TrackerPage() {
 
             </Grid>
 
-            <Heading>
-  Set Up
-</Heading>
-<Grid item xs={6}>
-
-<Paper className="TrackerPaperInfo">Google Home</Paper>
-
-<Paper className="TrackerPaperInfo">WebHooks</Paper>
-
-<Paper className="TrackerPaperInfo">Apple Iphone/Ipad</Paper>
-
-<Paper className="TrackerPaperInfo">More</Paper>
-</Grid>
-
-
+          
         
         </Grid>
       </Grid>

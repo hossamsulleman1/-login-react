@@ -6,9 +6,10 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 import RadarChart from "./GraphWidgets/graphs/RadarChart";
-// import StackedHistogram from './GraphWidgets/graphs/StackedHistogram'
+import StackedHistogram from './GraphWidgets/graphs/PieWithLabel'
 
 import { Text, Heading } from "rebass";
+import PieWithLabel from "./GraphWidgets/graphs/PieWithLabel";
 
 function ProfilePage() {
   return (
@@ -53,7 +54,7 @@ function ProfilePage() {
       <Container>
         <Grid container spacing={3}>
           <Grid item xs>
-            {/* <StackedHistogram></StackedHistogram> */}
+            <PieWithLabel></PieWithLabel>
           </Grid>
           <Grid item xs>
             <RadarChart></RadarChart>

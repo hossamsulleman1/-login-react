@@ -10,6 +10,20 @@
   padding-top: 60px;
 }
 
+.homesetupdiv {
+  display: flex;
+  justify-content: flex-start;
+  padding: 50px;
+}
+
+.floatright {
+  float: right;
+}
+
+.floatleft
+ {
+   float: left;
+ }
 .statsdiv {
   padding-top: 50px;
 }

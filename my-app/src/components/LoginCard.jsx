@@ -33,7 +33,7 @@ function LoginCard() {
               <br></br>
               <GoogleLogin
                 className="googleLogin"
-                clientId="386147001709-5s70gb9e2nnds1bir7f24hltuv879utd.apps.googleusercontent.com"
+                clientId="1024311609571-mrlofni060gikim0fmmrrrgcc4611p9f.apps.googleusercontent.com"
                 buttonText="Sign in with Google Auth"
                 onSuccess={responseGoogle}
                 onFailure={responseGoogle}
