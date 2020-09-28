@@ -11,7 +11,6 @@ import { Link } from "react-router-dom";
 import { Text, Box, Flex } from "rebass";
 import { GoogleLogin } from "react-google-login";
 import LoginForm from "./LoginForm";
-import { GoogleAuth } from "./GoogleAuth";
 
 const responseGoogle = (response) => {
   console.log(response);
@@ -32,7 +31,7 @@ function LoginCard() {
                 Provide Credentials or Authenticate
               </Typography>
               <br></br>
-             <GoogleAuth></GoogleAuth>
+             
               {/* allign this or center  */}
               <br></br>
               <br></br>

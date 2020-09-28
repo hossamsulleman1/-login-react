@@ -16,7 +16,6 @@ Flex,
   } from 'rebass'
   import { GoogleLogin } from 'react-google-login';
 import SignUpIcon from './SignUpSvg';
-import { GoogleAuth } from './GoogleAuth';
 
   const responseGoogle = (response) => {
     console.log(response);
@@ -42,7 +41,7 @@ function SignUpCard() {
       Create An account With us 
     </Typography>
     <br></br>
-  <GoogleAuth></GoogleAuth>
+  <
   {/* allign this or center  */}
   <br></br>
   <br></br>

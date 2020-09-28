@@ -2,7 +2,6 @@ import React from "react";
 import "../App.css";
 import { Grid } from "@material-ui/core";
 import LoginCard from "./LoginCard.jsx";
-import { GoogleAuth } from "./GoogleAuth";
 
 function LoginPage() {
   return (
@@ -20,7 +19,7 @@ function LoginPage() {
           <br></br>
 
           <LoginCard className="loginCard">
-            <GoogleAuth></GoogleAuth>
+            <Goog
           </LoginCard>
         </Grid>
 
