@@ -18,7 +18,7 @@ import TrackerPage from './components/Tracker/TrackerPage';
 function App() {
   return (
 <ThemeProvider theme={preset}>
-<FirebaseDatabaseProvider>
+  
 <Router>
 <NavBar></NavBar>
 <Switch>
@@ -32,7 +32,7 @@ function App() {
 
   </Switch> 
 </Router>
-</FirebaseDatabaseProvider>
+
 
 
 

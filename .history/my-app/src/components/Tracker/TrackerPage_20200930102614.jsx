@@ -5,7 +5,7 @@ import { Heading } from "rebass";
 import Paper from "@material-ui/core/Paper";
 import Premade from "./Premade";
 import Typography from "@material-ui/core/Typography";
-import TaskList from "./TaskList";
+import TaskList from "./TrackerFolders/TaskList";
 import PlusOneIcon from "@material-ui/icons/PlusOne";
 import Fab from "@material-ui/core/Fab";
 import NewTrackerSearch from "./NewTrackerSearch";

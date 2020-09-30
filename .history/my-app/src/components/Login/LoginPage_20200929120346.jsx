@@ -1,9 +1,8 @@
 import React from "react";
-import "../Css/CssCustom.css";
-
+import "../App.css";
 import { Grid } from "@material-ui/core";
 import LoginCard from "./LoginCard.jsx";
-import { GoogleAuth } from "../FirebaseAuth/GoogleAuth";
+import { GoogleAuth } from "./GoogleAuth";
 
 function LoginPage() {
   return (

@@ -3,7 +3,7 @@ import "../Css/CssCustom.css";
 
 import { Grid } from "@material-ui/core";
 import LoginCard from "./LoginCard.jsx";
-import { GoogleAuth } from "../FirebaseAuth/GoogleAuth";
+import { GoogleAuth } from "../";
 
 function LoginPage() {
   return (

@@ -5,7 +5,7 @@ import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
-import RadarChart from "../GraphWidgets/graphs/RadarChart";
+import RadarChart from "../GraphWidgets/graphs/PieWithLabel.jsx";
 // import StackedHistogram from "./GraphWidgets/graphs/PieWithLabel";
 
 import { Text, Heading } from "rebass";

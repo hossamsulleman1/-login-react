@@ -10,6 +10,52 @@ import {
 } from "@react-firebase/auth";
 import { config } from "./Config";
 
+const schema = {
+  "{env}": {
+    users: {
+      "{userID}": {
+        comment_count: "number",
+        username: "string",
+        is_verified: "boolean",
+        created_at: "timestamp"
+      }
+    },
+    posts: {
+      "{postID}": {
+        post_title: "string",
+        post_data: (faker, key) => {
+          // return faker.random.words(5)
+          return key.split("/").join("-") + ":post_data";
+        },
+        // Can be async function !
+        vote_counts: async (faker, key) => {
+          const result = await doSomethingAsync()
+          return result;
+        }
+        author_id: "{userID}",
+        created_at: "timestamp"
+      }
+    },
+    comments: {
+      "{postID}": {
+        "{commentID}": {
+          value: "👍",
+          userID: "{userID}"
+        }
+      }
+    }
+  }
+};
+
+const { generateJSON } = require("json-data-generator");
+
+(async () => {
+  const { keys, values, tree } = await generateJSON(schema);
+  console.log({ keys, values, tree });
+})()
+
+
+
 
 
 export const GoogleAuth = () => {

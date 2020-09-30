@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import { ThemeProvider } from 'emotion-theming'
 import preset from '@rebass/preset'
-import LoginPage from './components/Login/LoginPage';
+import LoginPage from './components/LoginPage';
 import HomePage from './components/Home/HomePage';
 import NavBar from "./components/Nav/HeaderContent";
 import SignUp from './components/SignUp/NewUserPage';
@@ -18,7 +18,6 @@ import TrackerPage from './components/Tracker/TrackerPage';
 function App() {
   return (
 <ThemeProvider theme={preset}>
-<FirebaseDatabaseProvider>
 <Router>
 <NavBar></NavBar>
 <Switch>
@@ -32,7 +31,7 @@ function App() {
 
   </Switch> 
 </Router>
-</FirebaseDatabaseProvider>
+
 
 
 

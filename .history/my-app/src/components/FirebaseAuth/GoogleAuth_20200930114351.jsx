@@ -11,7 +11,6 @@ import {
 import { config } from "./Config";
 
 
-
 export const GoogleAuth = () => {
   return (
     <FirebaseAuthProvider {...config} firebase={firebase}>

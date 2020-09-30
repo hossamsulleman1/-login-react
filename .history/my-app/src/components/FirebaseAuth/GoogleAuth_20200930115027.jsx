@@ -10,6 +10,9 @@ import {
 } from "@react-firebase/auth";
 import { config } from "./Config";
 
+const AuthInfo = {
+  isSignedIn, user, providerId
+}
 
 
 export const GoogleAuth = () => {

@@ -32,7 +32,7 @@ function App() {
 
   </Switch> 
 </Router>
-</FirebaseDatabaseProvider>
+<FirebaseDatabaseProvider></FirebaseDatabaseProvider>
 
 
 

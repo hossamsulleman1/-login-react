@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import { Heading } from "rebass";
 import CircleProgress from "../GraphWidgets/graphs/CircleProgress";
 import DashboardNav from "./DashboardNav";
-import NestedGrid from "./NestedGrid";
+import NestedGrid from "../";
 import Typography from "@material-ui/core/Typography";
 import DashboardQuotes from "./DashboardQuotes";
 

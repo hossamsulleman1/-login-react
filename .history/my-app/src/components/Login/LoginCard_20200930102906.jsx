@@ -9,7 +9,7 @@ import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
 
 import { Text, Box, Flex } from "rebass";
-
+import { GoogleLogin } from "react-google-login";
 import LoginForm from "./LoginForm";
 import { GoogleAuth } from "../FirebaseAuth/GoogleAuth";
 const responseGoogle = (response) => {

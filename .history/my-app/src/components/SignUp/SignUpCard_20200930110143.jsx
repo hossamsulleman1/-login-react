@@ -2,21 +2,22 @@ import React from "react";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import LoginIcon from "./LoginSvg";
 import "../Css/CssCustom.css";
-import PersonAddIcon from "@material-ui/icons/PersonAdd";
 import Button from "@material-ui/core/Button";
+import SignUpForm from "./SignUpForm";
+import MeetingRoomIcon from "@material-ui/icons/MeetingRoom";
 import { Link } from "react-router-dom";
 
 import { Text, Box, Flex } from "rebass";
 
-import LoginForm from "./LoginForm";
+import SignUpIcon from "./SignUpSvg";
 import { GoogleAuth } from "../FirebaseAuth/GoogleAuth";
+
 const responseGoogle = (response) => {
   console.log(response);
 };
 
-function LoginCard() {
+function SignUpCard() {
   return (
     <Card>
       <div>
@@ -24,14 +25,14 @@ function LoginCard() {
           <Flex mx={-2}>
             <Box width={1 / 2} px={2}>
               <Text fontSize={[3, 4, 5]} fontWeight="bold" color="black">
-                Sign in
+                Sign Up
               </Text>
               <br></br>
               <Typography variant="subtitle1" color="textSecondary">
-                Provide Credentials or Authenticate
+                Create An account With us
               </Typography>
               <br></br>
-             <GoogleAuth></GoogleAuth>
+              <GoogleAuth></GoogleAuth>
               {/* allign this or center  */}
               <br></br>
               <br></br>
@@ -39,21 +40,21 @@ function LoginCard() {
                 Alternatively
               </Text>
               <br></br>
-              <LoginForm></LoginForm>
+              <SignUpForm />
             </Box>
             <Box width={1 / 2} px={2}>
-              <Link to="/SignUp">
+              <Link className="" to="/LoginPage">
                 <Button
                   variant="contained"
                   color="primary"
                   className="newUser"
-                  startIcon={<PersonAddIcon />}
+                  startIcon={<MeetingRoomIcon />}
                 >
-                  New User
+                  Login
                 </Button>
               </Link>
 
-              <LoginIcon></LoginIcon>
+              <SignUpIcon></SignUpIcon>
             </Box>
           </Flex>
         </CardContent>
@@ -62,4 +63,4 @@ function LoginCard() {
   );
 }
 
-export default LoginCard;
+export default SignUpCard;

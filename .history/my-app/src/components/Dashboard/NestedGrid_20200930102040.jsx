@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import { Heading } from "rebass";
-import CircleProgress from "../GraphWidgets/graphs/CircleProgress";
+import CircleProgress from "../GraphWidgets/";
 import Typography from "@material-ui/core/Typography";
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 
