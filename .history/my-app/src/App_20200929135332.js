@@ -11,9 +11,9 @@ import LoginPage from './components/LoginPage';
 import HomePage from './components/HomePage';
 import NavBar from "./components/Nav/HeaderContent";
 import SignUp from './components/SignUp/NewUserPage';
-import DashboardPage from './components/Dashboard/DashboardPage';
-import ProfilePage from './components/Profile/ProfilePage';
-import TrackerPage from './components/Tracker/TrackerPage';
+import DashboardPage from './components/DashboardPage';
+import ProfilePage from './components/profile/ProfilePage';
+import TrackerPage from './components/TrackerPage';
 
 function App() {
   return (

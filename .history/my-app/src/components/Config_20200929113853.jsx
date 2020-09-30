@@ -8,7 +8,7 @@ export const config = {
   // OPTIONAL
   storageBucket: "semptiareact.appspot.com",
   measurementId: "G-HSKLQN04DJ",
-};
+};        
 
 //   firebaseConfig = {
 //     apiKey: "AIzaSyA18XI0uZ1LXDf6_p6NsPJ44ngPKNjNr8Q",
