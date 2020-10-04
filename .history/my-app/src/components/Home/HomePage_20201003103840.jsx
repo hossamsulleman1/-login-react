@@ -29,7 +29,7 @@ function HomePage() {
 
           <div className="introparahome">
             <IntroPara></IntroPara>
-            <div className="buttondivdiv">
+            <div class>
               <div className="buttondivright">
                 <Button>Left</Button>
                 {/* one button white one button purple */}
