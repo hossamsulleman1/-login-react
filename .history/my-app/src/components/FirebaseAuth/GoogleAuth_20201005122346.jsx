@@ -10,7 +10,7 @@ import {
 } from "@react-firebase/auth";
 import { config } from "./Config";
 
-export var user 
+wx
 
  export const GoogleAuth = () => {
   return (

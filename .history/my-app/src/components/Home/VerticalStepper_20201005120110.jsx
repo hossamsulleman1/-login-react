@@ -12,6 +12,7 @@ import CaseOne from "./Cases/CaseOne";
 import CaseThree from "./Cases/CaseThree";
 import CaseTwo from "./Cases/CaseTwo";
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
@@ -34,14 +35,14 @@ function getSteps() {
 
 function getStepContent(step) {
   switch (step) {
-    case 0:
-      return <CaseOne></CaseOne>;
     case 1:
-      return <CaseTwo></CaseTwo>;
+      return <CaseOne></CaseOne>;
     case 2:
+      return <CaseTwo></CaseTwo>;
+    case 3:
       return <CaseThree></CaseThree>;
     default:
-      return "";
+      return "Unknown step";
   }
 }
 

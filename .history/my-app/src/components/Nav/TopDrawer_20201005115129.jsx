@@ -57,7 +57,7 @@ function TopDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
 {/* CUSTOM NOT WORKING */}
-<p>hi</p>
+
 
 <Divider />
 

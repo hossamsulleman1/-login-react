@@ -56,12 +56,11 @@ function TopDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-{/* CUSTOM NOT WORKING */}
-<p>hi</p>
 
+<List>
+    
+</List>
 <Divider />
-
-{/* CUSTOM NOT WORKING */}
       <List>
         {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
           <ListItem button key={text}>

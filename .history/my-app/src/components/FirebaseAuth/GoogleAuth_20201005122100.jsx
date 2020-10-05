@@ -10,9 +10,9 @@ import {
 } from "@react-firebase/auth";
 import { config } from "./Config";
 
-export var user 
 
- export const GoogleAuth = () => {
+
+ const GoogleAuth = () => {
   return (
     <FirebaseAuthProvider {...config} firebase={firebase}>
       <div>
@@ -67,4 +67,4 @@ export var user
   );
 };
 
-export default GoogleAuth;
+export default GoogleAuth

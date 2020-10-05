@@ -56,13 +56,9 @@ function TopDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-{/* CUSTOM NOT WORKING */}
-<p>hi</p>
 
-<Divider />
 
-{/* CUSTOM NOT WORKING */}
-      <List>
+      {/* <List>
         {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
           <ListItem button key={text}>
             <ListItemIcon>
@@ -71,7 +67,7 @@ function TopDrawer() {
             <ListItemText primary={text} />
           </ListItem>
         ))}
-      </List>
+      </List> */}
       <Divider />
       <List>
         {["All mail", "Trash", "Spam"].map((text, index) => (

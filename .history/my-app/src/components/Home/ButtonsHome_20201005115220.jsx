@@ -1,8 +1,9 @@
+import { makeStyles } from "@material-ui/core/styles";
+import TopDrawer from "../Nav/TopDrawer";
+import Button from "@material-ui/core/Button";
 import React from "react";
 import clsx from "clsx";
-import { makeStyles } from "@material-ui/core/styles";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
-import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
 import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
@@ -11,28 +12,26 @@ import ListItemText from "@material-ui/core/ListItemText";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   list: {
     width: 250,
   },
   fullList: {
     width: "auto",
   },
-
-  root: {
-    "& > *": {
-      margin: theme.spacing(3),
-    },
+  button: {
+    paddingRight: "20px",
+    paddingLeft: "20px",
   },
-}));
+});
 
-function TopDrawer() {
+function ButtonsHome() {
   const classes = useStyles();
   const [state, setState] = React.useState({
-    top: true,
-    left: false,
-    bottom: false,
-    right: false,
+    // top: true,
+    left: true,
+    // bottom: false,
+    // right: false,
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -56,12 +55,8 @@ function TopDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-{/* CUSTOM NOT WORKING */}
-<p>hi</p>
 
-<Divider />
-
-{/* CUSTOM NOT WORKING */}
+      
       <List>
         {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
           <ListItem button key={text}>
@@ -88,9 +83,22 @@ function TopDrawer() {
 
   return (
     <div>
-      {["left", "right", "top", "bottom"].map((anchor) => (
+      {["left", 
+      // "right", 
+      // "top",
+      //  "bottom"
+      ].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+          {/* BUTTONS HERE OMDS */}
+          <div className={classes.root}>
+          <Button className={classes.button} variant="outlined" onClick={toggleDrawer(anchor, true)}>
+            Explore
+          </Button>
+          <Button variant="contained" color="primary">
+            Invite A Friend
+          </Button>
+          </div>
+         
           <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}
@@ -105,4 +113,4 @@ function TopDrawer() {
   );
 }
 
-export default TopDrawer;
+export default ButtonsHome;
