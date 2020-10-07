@@ -5,6 +5,7 @@ import AppBar from "@material-ui/core/AppBar";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Toolbar from "@material-ui/core/Toolbar";
 import List from "@material-ui/core/List";
+import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
@@ -13,6 +14,7 @@ import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
 import Grid from "@material-ui/core/Grid";
 import MiniChartCard from "../GraphWidgets/MiniChartCard";
+import Paper from "@material-ui/core/Paper";
 import CircleProgress from "../GraphWidgets/graphs/CircleProgress";
 import TrackerTable from "./TrackerTable";
 import CreateNewFolderIcon from "./CreateNewFolderIcon";
@@ -20,9 +22,10 @@ import AddTilesIcon from "./AddTilesIcon";
 import ChoreList from "./ChoreList";
 import Goals from "./Goals";
 import Card from "@material-ui/core/Card";
-// import ImportContactsIcon from "@material-ui/icons/ImportContacts";
+import ImportContactsIcon from "@material-ui/icons/ImportContacts";
 
 import QuotePremadeSelection from "./QuotePremadeSelection";
+import CustomQuoteHub from "./CustomQuoteHub";
 import RadarChart from "../GraphWidgets/graphs/RadarChart";
 import PieWithLabel from "../GraphWidgets/graphs/PieWithLabel";
 import IconWBadge from "./IconWBadge";
@@ -72,7 +75,7 @@ function DashboardDrawer() {
         <Toolbar />
         <div className={classes.drawerContainer}>
           {/* <List> */}
-          {/* {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+            {/* {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
               <ListItem button key={text}>
                 <ListItemIcon>
                   {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -81,33 +84,45 @@ function DashboardDrawer() {
               </ListItem>
             ))}
           </List> */}
-          <div>
-            <p className="SubHeading">WELCOME BACK...</p>
-            <IconWBadge></IconWBadge>
-          </div>
+<div>
+<p className="SubHeading">WELCOME BACK...</p>
+<IconWBadge></IconWBadge>
+</div>
+
 
           <Divider />
           <List>
-            {["Home", "Tracker", "Review", "Profile", "Dashboard"].map(
-              (text, index) => (
-                <ListItem button key={text}>
-                  <ListItemIcon>
-                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                  </ListItemIcon>
-                  <ListItemText primary={text} />
-                </ListItem>
-              )
-            )}
+            {["Home", "Tracker", "Review" , "Profile", "Dashboard"].map((text, index) => (
+              <ListItem button key={text}>
+                <ListItemIcon>
+                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                </ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItem>
+            ))}
           </List>
         </div>
       </Drawer>
       <main className={classes.content}>
-        <Grid item container>
-          <Grid xs={12}>
-            <p className="SubHeading">DAILY DOSAGE</p>
-            <QuotePremadeSelection></QuotePremadeSelection>
+        
+      <Grid item container >
+<Grid  xs={12}>
+  <p className="SubHeading">DAILY DOSAGE</p>
+<QuotePremadeSelection></QuotePremadeSelection>
+</Grid>
+
+
+
+
+
+
+
+
+
+  
+
+
           </Grid>
-        </Grid>
 
         <p className="HomeTitleDashboard">DASHBOARD</p>
 
@@ -132,6 +147,8 @@ function DashboardDrawer() {
             <MiniChartCard></MiniChartCard>
           </Grid>
         </Grid>
+
+        
 
         <Grid container spacing={3}>
           <Grid item xs={12}>
@@ -174,7 +191,8 @@ function DashboardDrawer() {
                 </Card>
               </div>
 
-              {/* START DRAG & DROP */}
+
+{/* START DRAG & DROP */}
               <div className="Tilesdivpadding">
                 <Card
                   className={classes.PaperTile}
@@ -184,9 +202,9 @@ function DashboardDrawer() {
                   <Goals></Goals>
                 </Card>
               </div>
-              {/* END  */}
+{/* END  */}
 
-              <div className="Tilesdivpadding">
+<div className="Tilesdivpadding">
                 <Card
                   className={classes.PaperTile}
                   elevation={0}
@@ -195,8 +213,16 @@ function DashboardDrawer() {
                   <RadarChart></RadarChart>
                 </Card>
               </div>
+
+          
+
             </div>
           </Grid>
+
+         
+
+
+ 
         </Grid>
 
         <br></br>
