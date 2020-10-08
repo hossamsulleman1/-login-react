@@ -31,16 +31,15 @@ function NavBar() {
         Trackers
       </Link> */}
 
-<Link style={navStyle} className="" to="/DashboardPage">
-        Dashboard
-      </Link>
-
-
+      
       <Link style={navStyle} to="/ProfilePage">
         Profile
       </Link>
 
-    
+      <Link style={navStyle} className="" to="/DashboardPage">
+        Dashboard
+      </Link>
+
 {/* 
       <Link style={navStyle} to="/SignUp">
         SignUp

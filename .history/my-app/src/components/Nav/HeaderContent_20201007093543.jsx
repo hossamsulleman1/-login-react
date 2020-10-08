@@ -31,20 +31,19 @@ function NavBar() {
         Trackers
       </Link> */}
 
-<Link style={navStyle} className="" to="/DashboardPage">
-        Dashboard
-      </Link>
-
-
+      
       <Link style={navStyle} to="/ProfilePage">
         Profile
       </Link>
 
-    
-{/* 
+      <Link style={navStyle} className="" to="/DashboardPage">
+        Dashboard
+      </Link>
+
+
       <Link style={navStyle} to="/SignUp">
         SignUp
-      </Link> */}
+      </Link>
 
       <Link to="/LoginPage">
         <Avatar alt="HS" src="/static/images/avatar/1.jpg" />

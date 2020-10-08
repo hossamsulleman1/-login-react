@@ -89,7 +89,6 @@ function DashboardDrawer() {
           <Divider />
           <List>
             {["Home", "Tracker", "Review", "Profile", "Dashboard", "Life Coach"].map(
-              // LINK THESE TO PAGES 
               (text, index) => (
                 <ListItem button key={text}>
                   <ListItemIcon>
