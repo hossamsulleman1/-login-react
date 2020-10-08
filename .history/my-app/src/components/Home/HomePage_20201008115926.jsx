@@ -13,8 +13,6 @@ import deepPurple from "@material-ui/core/colors/deepPurple";
 import VerticalStepper from "./VerticalStepper";
 import ButtonsHome from "./ButtonsHome";
 import Typography from "@material-ui/core/Typography";
-import Divider from '@material-ui/core/Divider';
-
 
 const color = deepPurple[300];
 
@@ -30,23 +28,23 @@ function HomePage() {
         {/* on small screens this will take up 2 but on extra smnall screens this will take up 0 as specified   */}
         <Grid item xs={0} sm={2} />
 
-        <Grid item xs={12} sm={8}>
+        {/* <Grid item xs={12} sm={8}> */}
           {/* this is where the content will be  */}
           {/* <Content/> */}
 
-{/* 
-<div className="floatleft"> */}
+
+<div className="floatleft">
 <Grid item container>
             <Grid item xs={4}>
               <div className="introparahome">
                 <IntroPara></IntroPara>
               </div>
             </Grid>
-{/* </div> */}
+</div>
          
 
-         
-{/* <div className="floatright"> */}
+
+<div className="floatright">
 <Grid item xs={8}>
               <div className="homesvghome">
                 <HomeSvg></HomeSvg>
@@ -55,10 +53,10 @@ function HomePage() {
                 </div>
               </div>
             </Grid>
-{/* </div> */}
+</div>
 
-      
-          </Grid>
+{/*       
+          // </Grid> */}
 
           <div className="containerhome1">
             <Grid item container xs={12} spacing={9}>
@@ -68,8 +66,7 @@ function HomePage() {
                     <SpeedIcon></SpeedIcon>
                   </div>
 
-                  <p className="HomeTitleMedium ">CAPTURE</p>
-                  <Divider></Divider>
+                  <p className="GridTitle">Capture</p>
                   <br></br>
                   <Typography variant="body2" color="textSecondary">
                     Explore a range of innovative ways to capture your bank
@@ -83,8 +80,7 @@ function HomePage() {
                 <div className="iconColouredPurpleDiv">
                   <MenuBookIcon></MenuBookIcon>
                 </div>
-                <p className="HomeTitleMedium ">PHILOSOPHY</p>
-                <Divider></Divider>
+                <p className="GridTitle">Philosophy</p>
                 <br></br>
                 <Typography variant="body2" color="textSecondary">
                   Gain knowledge from the best scholars provide yourself mental
@@ -97,8 +93,7 @@ function HomePage() {
                 <div className="iconColouredPurpleDiv">
                   <BarChartIcon></BarChartIcon>
                 </div>
-                <p className="HomeTitleMedium ">REVIEW</p>
-                <Divider></Divider>
+                <p className="GridTitle">Review</p>
                 <br></br>
                 <Typography variant="body2" color="textSecondary">
                   A collection of comprehensive charts to give meaningful and

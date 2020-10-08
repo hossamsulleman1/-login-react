@@ -13,7 +13,6 @@ import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
 import Avatar from '@material-ui/core/Avatar';
 import DrawerAvatar from "./DrawerAvatar";
-import ShareModal from "./ShareModal";
 
 
 const useStyles = makeStyles({
@@ -124,7 +123,7 @@ function ButtonsHome() {
       {/* <Button variant="contained" color="primary">
             Invite A Friend
           </Button> */}
-     <ShareModal></ShareModal>
+     
       </div>
             </div>
       

@@ -13,7 +13,6 @@ import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
 import Avatar from '@material-ui/core/Avatar';
 import DrawerAvatar from "./DrawerAvatar";
-import ShareModal from "./ShareModal";
 
 
 const useStyles = makeStyles({
@@ -73,21 +72,18 @@ function ButtonsHome() {
 
 
 <Divider />
-<List>
-            {["Home", "Tracker", "Review", "Profile", "Dashboard", "Life Coach"].map(
-              // LINK THESE TO PAGES 
-              (text, index) => (
-                <ListItem button key={text}>
-                  <ListItemIcon>
-                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                  </ListItemIcon>
-                  <ListItemText primary={text} />
-                </ListItem>
-              )
-            )}
-          </List>
+      <List>
+        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+          <ListItem button key={text}>
+            <ListItemIcon>
+              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+            </ListItemIcon>
+            <ListItemText primary={text} />
+          </ListItem>
+        ))}
+      </List>
       <Divider />
-      {/* <List>
+      <List>
         {["All mail", "Trash", "Spam"].map((text, index) => (
           <ListItem button key={text}>
             <ListItemIcon>
@@ -96,7 +92,7 @@ function ButtonsHome() {
             <ListItemText primary={text} />
           </ListItem>
         ))}
-      </List> */}
+      </List>
     </div>
   );
 
@@ -121,10 +117,9 @@ function ButtonsHome() {
             </div>
       
       <div className="padding">
-      {/* <Button variant="contained" color="primary">
+      <Button variant="contained" color="primary">
             Invite A Friend
-          </Button> */}
-     <ShareModal></ShareModal>
+          </Button>
       </div>
             </div>
       
@@ -133,7 +128,7 @@ function ButtonsHome() {
          
           <SwipeableDrawer
             anchor={anchor}
-            open={state[anchor]}
+            open={state[anchor],false}
             onClose={toggleDrawer(anchor, false)}
             onOpen={toggleDrawer(anchor, true)}
           >

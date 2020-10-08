@@ -22,7 +22,6 @@ function IntroPara() {
       </p>
 
       <p>┗</p>
-      
       <Divider></Divider>
 
       <p className="SubHeading">SEMPTIA + : A NON FOR PROFIT PROJECT</p>

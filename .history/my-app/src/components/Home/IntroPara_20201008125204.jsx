@@ -2,7 +2,6 @@ import React from "react";
 import { Heading } from "rebass";
 import Typography from "@material-ui/core/Typography";
 import Fonts from "../Css/Fonts.css";
-import Divider from '@material-ui/core/Divider';
 
 
 function IntroPara() {
@@ -22,8 +21,6 @@ function IntroPara() {
       </p>
 
       <p>┗</p>
-      
-      <Divider></Divider>
 
       <p className="SubHeading">SEMPTIA + : A NON FOR PROFIT PROJECT</p>
     </div>

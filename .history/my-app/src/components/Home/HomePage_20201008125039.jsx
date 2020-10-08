@@ -13,8 +13,6 @@ import deepPurple from "@material-ui/core/colors/deepPurple";
 import VerticalStepper from "./VerticalStepper";
 import ButtonsHome from "./ButtonsHome";
 import Typography from "@material-ui/core/Typography";
-import Divider from '@material-ui/core/Divider';
-
 
 const color = deepPurple[300];
 
@@ -68,8 +66,8 @@ function HomePage() {
                     <SpeedIcon></SpeedIcon>
                   </div>
 
-                  <p className="HomeTitleMedium ">CAPTURE</p>
-                  <Divider></Divider>
+                  <p className="HomeTitleMedium ">CAPTURE
+                  
                   <br></br>
                   <Typography variant="body2" color="textSecondary">
                     Explore a range of innovative ways to capture your bank
@@ -83,8 +81,8 @@ function HomePage() {
                 <div className="iconColouredPurpleDiv">
                   <MenuBookIcon></MenuBookIcon>
                 </div>
-                <p className="HomeTitleMedium ">PHILOSOPHY</p>
-                <Divider></Divider>
+                <p className="HomeTitleMedium ">PHILOSOPHY
+                
                 <br></br>
                 <Typography variant="body2" color="textSecondary">
                   Gain knowledge from the best scholars provide yourself mental
@@ -97,8 +95,8 @@ function HomePage() {
                 <div className="iconColouredPurpleDiv">
                   <BarChartIcon></BarChartIcon>
                 </div>
-                <p className="HomeTitleMedium ">REVIEW</p>
-                <Divider></Divider>
+                <p className="HomeTitleMedium ">REVIEW
+                
                 <br></br>
                 <Typography variant="body2" color="textSecondary">
                   A collection of comprehensive charts to give meaningful and
