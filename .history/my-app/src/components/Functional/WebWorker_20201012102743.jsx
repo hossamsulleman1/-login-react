@@ -7,25 +7,6 @@ import worker from "./worker.js";
 import WorkerSetup from "./workerSetup";
 
 function WebWorker() {
-
-	fetchWebWorker = () => {
-
-		this.worker.postMessage('Fetch Users');
-
-		this.worker.addEventListener('message', event => {
-			this.setState({
-				count: event.data.length
-			})
-		});
-	}
-
-	componentDidMount = () => {
-		this.worker = new WebWorker(worker);
-
-	}
-
-
-
   const [open, setOpen] = React.useState(false);
 
   const handleClick = () => {
@@ -49,7 +30,7 @@ function WebWorker() {
           horizontal: 'left',
         }}
         open={open}
-        // autoHideDuration={6000}
+        autoHideDuration={6000}
         onClose={handleClose}
         message="Note archived"
         action={

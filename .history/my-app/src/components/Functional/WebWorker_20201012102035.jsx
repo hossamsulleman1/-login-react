@@ -7,33 +7,29 @@ import worker from "./worker.js";
 import WorkerSetup from "./workerSetup";
 
 function WebWorker() {
+  fetchWebWorker = () => {
+    this.worker.postMessage("Fetch Users");
 
-	fetchWebWorker = () => {
+    this.worker.addEventListener("message", (event) => {
+      this.setState({
+        count: event.data.length,
+      });
+    });
+  };
 
-		this.worker.postMessage('Fetch Users');
-
-		this.worker.addEventListener('message', event => {
-			this.setState({
-				count: event.data.length
-			})
-		});
-	}
-
-	componentDidMount = () => {
-		this.worker = new WebWorker(worker);
-
-	}
-
-
+  componentDidMount = () => {
+    this.worker = new WebWorker(worker);
+  };
 
   const [open, setOpen] = React.useState(false);
 
   const handleClick = () => {
     setOpen(true);
+    InitWorker();
   };
 
   const handleClose = (event, reason) => {
-    if (reason === 'clickaway') {
+    if (reason === "clickaway") {
       return;
     }
 
@@ -42,22 +38,39 @@ function WebWorker() {
 
   return (
     <div>
-      <Button onClick={handleClick}>Open simple snackbar</Button>
+      <Button
+        onClick={() => {
+          {
+            handleClick;
+          }
+          {
+            this.fetchWebWorker;
+          }
+        }}
+      >
+        Open simple snackbar
+      </Button>
       <Snackbar
         anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'left',
+          vertical: "bottom",
+          horizontal: "left",
         }}
         open={open}
         // autoHideDuration={6000}
         onClose={handleClose}
         message="Note archived"
+        // WEB WORKER TIME ELAPSED AND NAME
         action={
           <React.Fragment>
             <Button color="secondary" size="small" onClick={handleClose}>
               UNDO
             </Button>
-            <IconButton size="small" aria-label="close" color="inherit" onClick={handleClose}>
+            <IconButton
+              size="small"
+              aria-label="close"
+              color="inherit"
+              onClick={handleClose}
+            >
               <CloseIcon fontSize="small" />
             </IconButton>
           </React.Fragment>
@@ -66,3 +79,5 @@ function WebWorker() {
     </div>
   );
 }
+
+export default WebWorker;
