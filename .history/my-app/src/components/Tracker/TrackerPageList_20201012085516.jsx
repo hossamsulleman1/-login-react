@@ -7,10 +7,6 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-import Button from '@material-ui/core/Button';
-import  WebWorker from '../Functional/WebWorker'
-
-
 // IMPLEMENT TASK GENRE 
 
 
@@ -40,7 +36,7 @@ function subtotal(items) {
 }
 
 const rows = [
-  createRow('Paperclips (Box)',<WebWorker></WebWorker> , 1.15),
+  createRow('Paperclips (Box)', <, 1.15),
   createRow('Paper (Case)', 10, 45.99),
   createRow('Waste Basket', 2, 17.99),
 ];
