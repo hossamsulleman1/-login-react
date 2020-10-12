@@ -38,12 +38,12 @@ function TimerButton() {
   return (
     <div>
       <Button
-        onClick={() => {
-          handleClick();
-          fetchWebWorker();
-        }}
+        // onClick={() => {
+        //   handleClick();
+        //   fetchWebWorker();
+        // }}
       
-        // onClick={fetchWebWorker}
+        onClick={fetchWebWorker}
       >
 
         Open simple snackbar

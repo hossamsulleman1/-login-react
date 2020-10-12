@@ -43,7 +43,7 @@ function TimerButton() {
           fetchWebWorker();
         }}
       
-        // onClick={fetchWebWorker}
+        onClick={fetchWebWorker}
       >
 
         Open simple snackbar

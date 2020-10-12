@@ -7,22 +7,27 @@ import worker from './TimerWorker/worker';
 import WebWorker from './TimerWorker/workerSetup';
 
 function TimerButton() {
-  const workerRef = React.useRef()
-  const [count, setCount] = React.useState()
+  
+  
+  // fetchWebWorker = () => {
+
+	// 	this.worker.postMessage('Fetch Users');
+
+	// 	this.worker.addEventListener('message', event => {
+	// 		this.setState({
+	// 			count: event.data.length
+	// 		})
+	// 	});
+	// }
+
+	// componentDidMount = () => {
+	// 	this.worker = new WebWorker(worker);
+
+  // }
+  
+
   const [open, setOpen] = React.useState(false);
 
-  const fetchWebWorker = () => {
-		workerRef.current.postMessage('Fetch Users');
-
-		workerRef.current.addEventListener('message', event => {
-			setCount(event.data.length)
-		});
-	}
-
-	React.useEffect(() => {
-		workerRef.current = new WebWorker(worker);
-  }, [])
-  
   const handleClick = () => {
     setOpen(true);
   };
@@ -38,12 +43,12 @@ function TimerButton() {
   return (
     <div>
       <Button
-        onClick={() => {
-          handleClick();
-          fetchWebWorker();
-        }}
+        // onClick={() => {
+        //   handleClick();
+        //   this.fetchWebWorker();
+        // }}
       
-        // onClick={fetchWebWorker}
+        // onClick={this.fetchWebWorker}
       >
 
         Open simple snackbar
@@ -54,7 +59,7 @@ function TimerButton() {
           horizontal: "left",
         }}
         open={open}
-        // autoHideDuration={6000}
+        autoHideDuration={6000}
         onClose={handleClose}
         message="Note archived"
         action={

@@ -38,12 +38,12 @@ function TimerButton() {
   return (
     <div>
       <Button
-        onClick={() => {
-          handleClick();
-          fetchWebWorker();
-        }}
+        // onClick={() => {
+        //   handleClick();
+        //   fetchWebWorker();
+        // }}
       
-        // onClick={fetchWebWorker}
+        onClick={fetchWebWorker}
       >
 
         Open simple snackbar
@@ -54,7 +54,7 @@ function TimerButton() {
           horizontal: "left",
         }}
         open={open}
-        // autoHideDuration={6000}
+        autoHideDuration={6000}
         onClose={handleClose}
         message="Note archived"
         action={

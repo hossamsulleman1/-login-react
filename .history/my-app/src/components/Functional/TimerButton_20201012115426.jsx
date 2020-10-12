@@ -7,22 +7,24 @@ import worker from './TimerWorker/worker';
 import WebWorker from './TimerWorker/workerSetup';
 
 function TimerButton() {
-  const workerRef = React.useRef()
-  const [count, setCount] = React.useState()
-  const [open, setOpen] = React.useState(false);
-
+  
+  
   const fetchWebWorker = () => {
-		workerRef.current.postMessage('Fetch Users');
+		this.worker.postMessage('Fetch Users');
 
-		workerRef.current.addEventListener('message', event => {
-			setCount(event.data.length)
+		this.worker.addEventListener('message', event => {
+			this.setState({
+				count: event.data.length
+			})
 		});
 	}
 
 	React.useEffect(() => {
-		workerRef.current = new WebWorker(worker);
+		this.worker = new WebWorker(worker);
   }, [])
   
+  const [open, setOpen] = React.useState(false);
+
   const handleClick = () => {
     setOpen(true);
   };
@@ -38,12 +40,12 @@ function TimerButton() {
   return (
     <div>
       <Button
-        onClick={() => {
-          handleClick();
-          fetchWebWorker();
-        }}
+        // onClick={() => {
+        //   handleClick();
+        //   fetchWebWorker();
+        // }}
       
-        // onClick={fetchWebWorker}
+        onClick={fetchWebWorker}
       >
 
         Open simple snackbar
