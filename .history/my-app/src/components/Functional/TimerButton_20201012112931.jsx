@@ -3,12 +3,13 @@ import Button from "@material-ui/core/Button";
 import Snackbar from "@material-ui/core/Snackbar";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
-import worker from "./worker.js";
-import WorkerSetup from "./workerSetup";
+import worker from './worker.js';
+import WebWorker from './workerSetup';
 
-function WebWorker() {
 
-	fetchWebWorker = () => {
+function TimerButton() {
+
+  fetchWebWorker = () => {
 
 		this.worker.postMessage('Fetch Users');
 
@@ -42,14 +43,18 @@ function WebWorker() {
 
   return (
     <div>
-      <Button onClick={handleClick}>Open simple snackbar</Button>
+      <Button onClick={handleClick
+        
+        
+        
+        >Open simple snackbar</Button>
       <Snackbar
         anchorOrigin={{
           vertical: 'bottom',
           horizontal: 'left',
         }}
         open={open}
-        // autoHideDuration={6000}
+        autoHideDuration={6000}
         onClose={handleClose}
         message="Note archived"
         action={
@@ -66,3 +71,6 @@ function WebWorker() {
     </div>
   );
 }
+
+
+export default TimerButton;
