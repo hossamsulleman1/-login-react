@@ -1,0 +1,42 @@
+import React from 'react';
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
+import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
+
+
+export default function MainRight() {
+
+return (
+
+   <Grid xs={12}>
+
+       <div className="flexbox">
+
+<div className="padding">
+<p>NAME OF LIST</p>
+</div>
+
+
+<div className="padding">
+<p>12 </p>
+
+</div>
+
+<div className="paddingtop">
+<Button
+        variant="contained"
+        color="primary"
+        size="small"
+        startIcon={<PlaylistAddIcon />}
+      >
+        Add New Reminder
+      </Button>
+</div>
+       </div>
+
+
+   </Grid> 
+
+);
+
+}
