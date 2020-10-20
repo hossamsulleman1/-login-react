@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { ThemeProvider } from "emotion-theming";
 import preset from "@rebass/preset";
 import LoginPage from "./components/Login/LoginPage";
 import HomePage from "./components/Home/HomePage";
@@ -22,7 +23,8 @@ import StyledFirebaseAuth from './react-firebaseui/StyledFirebaseAuth'
 
 
 class App extends Component {
-state={isSignedIn}
+
+
   render() {
   return (
    

@@ -22,7 +22,7 @@ import StyledFirebaseAuth from './react-firebaseui/StyledFirebaseAuth'
 
 
 class App extends Component {
-state={isSignedIn}
+state={isSigned}
   render() {
   return (
    
